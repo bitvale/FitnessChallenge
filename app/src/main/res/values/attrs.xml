@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="radius" format="dimension" />
+
+    <declare-styleable name="ColoredChip">
+        <attr name="android:text" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:padding" />
+        <attr name="strokeColor" format="color"/>
+        <attr name="default_background" format="color"/>
+        <attr name="checked_background" format="color"/>
+        <attr name="outlineWidth" format="dimension" />
+        <attr name="radius"/>
+        <attr name="font" format="reference" />
+        <attr name="isChecked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PulseView">
+        <attr name="radius"/>
+    </declare-styleable>
+</resources>

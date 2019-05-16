@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- standard metrics -->
+    <dimen name="space_tiny">4dp</dimen>
+    <dimen name="space_small">8dp</dimen>
+    <dimen name="space_xsmall">12dp</dimen>
+    <dimen name="space_normal">16dp</dimen>
+    <dimen name="space_medium">24dp</dimen>
+    <dimen name="space_large">32dp</dimen>
+    <dimen name="space_xlarge">40dp</dimen>
+    <dimen name="space_huge">64dp</dimen>
+
+    <!-- standard margins -->
+    <dimen name="margin_tiny">@dimen/space_tiny</dimen>
+    <dimen name="margin_small">@dimen/space_small</dimen>
+    <dimen name="margin_xsmall">@dimen/space_xsmall</dimen>
+    <dimen name="margin_normal">@dimen/space_normal</dimen>
+    <dimen name="margin_large">@dimen/space_large</dimen>
+    <dimen name="margin_medium">@dimen/space_medium</dimen>
+
+    <!-- standard paddings -->
+    <dimen name="padding_tiny">@dimen/space_tiny</dimen>
+    <dimen name="padding_small">@dimen/space_small</dimen>
+    <dimen name="padding_xsmall">@dimen/space_xsmall</dimen>
+    <dimen name="padding_normal">@dimen/space_normal</dimen>
+    <dimen name="padding_medium">@dimen/space_medium</dimen>
+    <dimen name="padding_large">@dimen/space_large</dimen>
+
+    <!-- standard fonts -->
+    <dimen name="font_title_large">28sp</dimen>
+    <dimen name="font_title">26sp</dimen>
+    <dimen name="font_larger">22sp</dimen>
+    <dimen name="font_x_large">20sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_medium">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_extra_small">11sp</dimen>
+
+    <dimen name="chip_outline_width" tools:ignore="PxUsage">2px</dimen>
+
+    <dimen name="icon_size">56dp</dimen>
+    <dimen name="menu_icon_size">36dp</dimen>
+
+    <dimen name="menu_arrow_icon_size">20dp</dimen>
+    <dimen name="menu_icon_width">36dp</dimen>
+    <dimen name="menu_icon_height">48dp</dimen>
+
+    <dimen name="pulse_view_size">72dp</dimen>
+    <dimen name="pulse_view_radius">56dp</dimen>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/container"
+             android:foreground="@drawable/ripple"
+             android:clickable="true"
+             android:layout_margin="@dimen/margin_small"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:background="@drawable/bg_menu_blue"
+             android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@drawable/bg_menu_blue">
+
+        <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                tools:src="@drawable/ic_menu_barbell"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"/>
+
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_white"
+                android:textSize="20sp"
+                tools:text="Full Body"
+                app:layout_constraintTop_toTopOf="@+id/icon"
+                app:layout_constraintStart_toEndOf="@+id/icon"
+                android:layout_marginStart="@dimen/margin_normal"
+                app:layout_constraintBottom_toTopOf="@+id/chip_beginner"
+                app:layout_constraintVertical_chainStyle="packed"
+                android:layout_marginBottom="@dimen/margin_normal"/>
+
+        <com.bitvale.fitnesschallenge.widget.ColoredChip
+                android:id="@+id/chip_beginner"
+                android:text="@string/level_beginner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:default_background="@android:color/white"
+                android:textSize="@dimen/font_extra_small"
+                app:layout_constraintBottom_toBottomOf="@+id/icon"
+                app:layout_constraintStart_toStartOf="@+id/title"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                app:layout_constraintHorizontal_chainStyle="spread"/>
+
+        <com.bitvale.fitnesschallenge.widget.ColoredChip
+                android:id="@+id/chip_intermediate"
+                android:text="@string/level_intermediate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:default_background="@android:color/white"
+                android:textSize="@dimen/font_extra_small"
+                app:layout_constraintBottom_toBottomOf="@+id/chip_beginner"
+                app:layout_constraintTop_toTopOf="@+id/chip_beginner"
+                app:layout_constraintStart_toEndOf="@+id/chip_beginner"
+                app:layout_constraintEnd_toStartOf="@+id/chip_advanced"
+                app:layout_constraintHorizontal_chainStyle="spread"/>
+
+        <com.bitvale.fitnesschallenge.widget.ColoredChip
+                android:id="@+id/chip_advanced"
+                android:text="@string/level_advanced"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:default_background="@android:color/white"
+                android:textSize="@dimen/font_extra_small"
+                app:layout_constraintBottom_toBottomOf="@+id/chip_beginner"
+                app:layout_constraintTop_toTopOf="@+id/chip_beginner"
+                app:layout_constraintStart_toEndOf="@+id/chip_intermediate"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

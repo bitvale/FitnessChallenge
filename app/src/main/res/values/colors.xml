@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5640a2</color>
+    <color name="colorPrimaryDark">#483687</color>
+    <color name="colorAccent">#09bff9</color>
+    <color name="bg_color_home">#D92F266F</color>
+    <color name="bg_circle_view">#1F8068C9</color>
+    <color name="bg_circle_view_animated">#5a49a5</color>
+    <color name="bg_menu">#4f3596</color>
+
+    <color name="pulse_bg_color">#FFFFFF</color>
+    <color name="pulse_color">#1FACA3D4</color>
+    <color name="pulse_color2">#2EACA3D4</color>
+
+    <color name="color_outline">#8cc3c5d1</color>
+    <color name="chip_background">#2892e2c5</color>
+    <color name="text_color_light">#ffc3c5d1</color>
+    <color name="text_color_dark">#6151A5</color>
+    <color name="text_color_white">#eee</color>
+
+    <color name="splash_gradient_start">#553ea1</color>
+    <color name="splash_gradient_end">#2f266f</color>
+</resources>

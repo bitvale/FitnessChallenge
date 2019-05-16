@@ -1,0 +1,31 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.Splash">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AppTheme.FullScreen">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ColoredChip">
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="strokeColor">@color/color_outline</item>
+        <item name="checked_background">@color/chip_background</item>
+
+        <item name="android:textColor">@color/text_color_light</item>
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="radius">@dimen/space_small</item>
+        <item name="outlineWidth">@dimen/chip_outline_width</item>
+    </style>
+</resources>

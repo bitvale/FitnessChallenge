@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        tools:background="@color/bg_color_home"
+        tools:context=".ui.activity.MainActivity">
+
+    <com.bitvale.fitnesschallenge.widget.PulseView
+            android:id="@+id/pulse_view"
+            android:layout_width="@dimen/pulse_view_size"
+            android:layout_height="@dimen/pulse_view_size"
+            app:radius="@dimen/pulse_view_radius"
+            android:alpha="0"
+            tools:alpha="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+            android:id="@+id/img_flame"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:alpha="0"
+            tools:alpha="1"
+            app:srcCompat="@drawable/img_flame"
+            app:layout_constraintTop_toTopOf="@+id/pulse_view"
+            app:layout_constraintStart_toStartOf="@+id/pulse_view"
+            app:layout_constraintEnd_toEndOf="@+id/pulse_view"
+            app:layout_constraintBottom_toBottomOf="@+id/pulse_view"/>
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center"
+            android:alpha="0"
+            tools:alpha="1"
+            android:text="@string/title"
+            android:textSize="@dimen/font_larger"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_dark"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_flame"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8">
+
+        <LinearLayout
+                android:id="@+id/training_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:foreground="?attr/selectableItemBackground"
+                android:alpha="0"
+                tools:alpha="1"
+                android:padding="@dimen/padding_normal">
+
+            <ImageView
+                    android:layout_width="@dimen/menu_icon_width"
+                    android:layout_height="@dimen/menu_icon_height"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_timer"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/menu_training_plans"
+                    android:textSize="@dimen/font_larger"/>
+
+            <View android:layout_width="0dp"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"/>
+
+            <ImageView android:layout_width="@dimen/menu_arrow_icon_size"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical|end"
+                       app:srcCompat="@drawable/ic_right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/reminder_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:foreground="?attr/selectableItemBackground"
+                android:alpha="0"
+                tools:alpha="1"
+                android:padding="@dimen/padding_normal">
+
+            <ImageView
+                    android:layout_width="@dimen/menu_icon_width"
+                    android:layout_height="@dimen/menu_icon_height"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_reminder"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/menu_reminder"
+                    android:textSize="@dimen/font_larger"/>
+
+            <View android:layout_width="0dp"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"/>
+
+            <ImageView android:layout_width="@dimen/menu_arrow_icon_size"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical|end"
+                       app:srcCompat="@drawable/ic_right"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/settings_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:foreground="?attr/selectableItemBackground"
+                android:alpha="0"
+                tools:alpha="1"
+                android:padding="@dimen/padding_normal">
+
+            <ImageView
+                    android:layout_width="@dimen/menu_icon_width"
+                    android:layout_height="@dimen/menu_icon_height"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_settings"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/menu_settings"
+                    android:textSize="@dimen/font_larger"/>
+
+            <View android:layout_width="0dp"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"/>
+
+            <ImageView android:layout_width="@dimen/menu_arrow_icon_size"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center_vertical|end"
+                       app:srcCompat="@drawable/ic_right"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/promise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"
+            android:text="@string/promise"
+            android:textSize="@dimen/font_x_large"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

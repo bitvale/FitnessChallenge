@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Fitness Challenge</string>
+
+    <string name="title">Gym Workout</string>
+    <string name="subtitle">Sport Makes Me Hard</string>
+
+    <string name="menu_1">Full Body</string>
+    <string name="menu_2">Chest</string>
+    <string name="menu_3">Arms</string>
+    <string name="menu_4">Bench Press</string>
+    <string name="menu_5">Running</string>
+    <string name="menu_6">ABS</string>
+
+    <string name="level_beginner">Beginner</string>
+    <string name="level_intermediate">Intermediate</string>
+    <string name="level_advanced">Advanced</string>
+
+    <string name="promise">coming soon…</string>
+
+    <string name="title_settings">Settings</string>
+
+    <string name="menu_training_plans">Training Plans</string>
+    <string name="menu_reminder">Reminder</string>
+    <string name="menu_settings">Settings</string>
+</resources>
