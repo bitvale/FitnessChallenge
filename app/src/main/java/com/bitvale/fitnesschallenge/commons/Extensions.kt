@@ -43,7 +43,8 @@ fun StaticLayout.textWidth(): Int {
  * Linearly interpolate between two values.
  */
 fun lerp(a: Float, b: Float, t: Float): Float {
-    return a + (b - a) * t
+     val leaps = a + (b - a) * t
+    return if(leaps>0) leaps else 0.0f
 }
 
 fun Animation.withEndActionOnce(action: () -> Unit) {
